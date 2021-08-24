@@ -43,21 +43,25 @@ namespace TacoCatMVC.Controllers
 			string inputWord = palindrome.InputWord;
 			string revWord = "";
 
-			for (int i = inputWord.Length - 1; i >= 0; i--)
+			if (inputWord != null)
 			{
-				revWord += inputWord[i];
+				for (int i = inputWord.Length - 1; i >= 0; i--)
+				{
+					revWord += inputWord[i];
+				}
+
+				palindrome.RevWord = revWord;
+
+				revWord = Regex.Replace(revWord.ToLower(), "[^a-zA-Z0-9]+", "");
+				inputWord = Regex.Replace(inputWord.ToLower(), "[^a-zA-Z0-9]+", "");
 			}
 
-			palindrome.RevWord = revWord;
-
-			revWord = Regex.Replace(revWord.ToLower(), "[^a-zA-Z0-9]+", "");
-			inputWord = Regex.Replace(inputWord.ToLower(), "[^a-zA-Z0-9]+", "");
-
-			if(revWord == inputWord)
+			if (revWord == inputWord)
 			{
 				palindrome.IsPalindrome = true;
 				palindrome.Message = $"Success {palindrome.InputWord} is a Palindrome";
-			} else
+			}
+			else
 			{
 				palindrome.IsPalindrome = false;
 				palindrome.Message = $"Sorry {palindrome.InputWord} is not a Palindrome";

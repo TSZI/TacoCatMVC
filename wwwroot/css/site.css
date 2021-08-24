@@ -1,20 +1,20 @@
 ﻿:root {
-    --primary-color: #112288;
-    --secondary-color: #ffc115;
-    --dark-color: #292929;
-    --white-color: #e8ebe9;
+	--primary-color: #112288;
+	--secondary-color: #ffc115;
+	--dark-color: #292929;
+	--white-color: #e8ebe9;
 }
 
 body {
-    color: var(--dark-color);
+	color: var(--dark-color);
 }
 
 nav {
-    background-color: var(--dark-color);
+	background-color: var(--dark-color);
 }
 
 footer {
-    background-color: var(--dark-color);
+	background-color: var(--dark-color);
 }
 
 h1,
@@ -23,12 +23,12 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 main .logo {
-    max-width: 700px;
-    max-height: 550px;
+	max-width: 700px;
+	max-height: 550px;
 }
 
 /*.footer {
@@ -40,57 +40,67 @@ main .logo {
 /*}*/
 
 footer {
-
-    padding-right: 1rem;
-    padding-left: 1rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
-footer .social a {
-    color: var(--white-color);
-    opacity: 0.75;
-    transition: all 0.3s ease-in-out;
-}
+	footer .social a {
+		color: var(--white-color);
+		opacity: 0.75;
+		transition: all 0.3s ease-in-out;
+	}
 
-footer .social a:hover {
-    color: var(--secondary-color);
-    opacity: 1;
-}
+		footer .social a:hover {
+			color: var(--secondary-color);
+			opacity: 1;
+		}
 
 main > .container {
-    padding: 60px 15px 0;
+	padding: 60px 15px 0;
 }
 
 .sticky-nav {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
 .bs-icon {
-    color: purple;
+	color: purple;
 }
 
 .js-icon {
-    color: #e4d407;
+	color: #e4d407;
 }
 
 .html5-icon {
-    color: orangered;
+	color: orangered;
 }
 
 .css-icon {
-    color: rgb(11, 82, 214);
+	color: rgb(11, 82, 214);
 }
 
 .checklist li i {
-    color: var(--secondary-color);
+	color: var(--secondary-color);
 }
 
 /* PRISM */
 code[class*='language-'],
 pre[class*='language-'] {
-    white-space: pre-wrap;
-    word-break: break-all;
-    word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+
+.csharp-icon {
+	display: inline-block;
+	margin-top: 2px;
+	font-size: 3rem;
+	padding: 7px 10px;
+	background: #b023b0;
+	color: #fff;
+	border-radius: 10px;
 }
